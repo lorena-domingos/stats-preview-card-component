@@ -1,5 +1,6 @@
-@use '_layout.scss';
 @use '_variables.scss' as *;
+@use '_layout.scss';
+@use '_mobile.scss';
 
 body {
     background-color: $background-color;
@@ -55,7 +56,23 @@ body {
     }
 }
 
-img {
+.image-overlay {
+    display: inline-flex;
+    position: relative;
+}
+
+.image-overlay.desktop {
     border-top-right-radius: 0.5em;
     border-bottom-right-radius: 0.5em;
+}
+
+.image-overlay.mobile {
+    display: none;
+}
+
+.image-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: hsl(277deg 48.15% 32% / 58%);
 }

@@ -1,0 +1,36 @@
+@media (max-width: 768px) {
+
+    .card {
+        width: 340px;
+        height: 805px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .stat-headings {
+        flex-direction: column;
+    }
+
+    .image-overlay.desktop {
+        display: none;
+    }
+
+    .image-overlay.mobile {
+        img {
+            border-top-right-radius: 0.5em;
+            border-top-left-radius: 0.5em;
+        }
+        display: inline-flex !important;
+        flex-direction: column;
+    }
+
+    .stat-headings {
+        gap: 30px !important;
+        margin-top: unset !important;
+    }
+
+    main {
+        height: unset;
+        padding: 20px;
+    }
+}
