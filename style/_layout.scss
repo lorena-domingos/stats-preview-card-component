@@ -4,3 +4,20 @@
     box-sizing: border-box;
 }
 
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    @include flex-center;
+}
+
+.card {
+    display: flex;
+    width: 1024px;
+    height: 430px;
+    border-radius: 0.5em;
+}

@@ -1,2 +1,61 @@
 @use '_layout.scss';
+@use '_variables.scss' as *;
 
+body {
+    background-color: $background-color;
+}
+
+.card {
+    background-color: $card-color;
+}
+
+.text {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text {
+    h1 {
+        color: $main-text;
+        font-family: 'Lexenda Deca', sans-serif;
+        font-weight: 700;
+    }
+
+    .paragraph {
+        color: $main-paragraph;
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    strong {
+        color: $overlay-accent;
+        font-weight: 700;    
+    }
+}
+
+.stat-headings {
+    display: flex;
+    gap: 70px;
+    margin-top: 60px;
+
+    h2 {
+        font-family: 'Lexenda Deca', sans-serif;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: $main-text;
+    }
+
+    p {
+        font-family: 'Inter', sans-serif;
+        color: $stats-headings;
+        font-size: 15px;
+    }
+}
+
+img {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
