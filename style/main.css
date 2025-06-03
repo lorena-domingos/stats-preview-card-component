@@ -74,6 +74,7 @@ body {
 .image-overlay {
   display: inline-flex;
   position: relative;
+  opacity: 0.7;
 }
 
 .image-overlay.mobile {
@@ -94,7 +95,7 @@ body {
 @media (max-width: 768px) {
   .card {
     width: 340px;
-    height: 805px;
+    height: 795px;
     text-align: center;
     flex-direction: column;
   }
@@ -119,6 +120,10 @@ body {
   main {
     height: unset;
     padding: 20px;
+  }
+  .text {
+    padding: 25px;
+    gap: 35px;
   }
 }
 
